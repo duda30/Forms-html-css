@@ -13,10 +13,37 @@
     <br>
     <form>
         <fieldset class="grupo">
-            <div>
-                <label for="nome"><strong>Nome</strong></label>
+            <div class="campo">
+                <label for="nome"><strong>Nome Completo</strong></label>
                 <input type="text" name="nome" id="nome" required>
             </div>
+
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label><strong>Selecione a quanto tempo você estuda os conceitos de Nuvem AWS:</strong></label>
+                <label>
+                    <input type="radio" name="oneweek" id="oneweek" checked>Alguns dias
+                </label>
+                <label>
+                    <input type="radio" name="month" id="month">1 mês
+                </label>
+                <label>
+                    <input type="radio" name="sixmonth" id="sixmonth">Cerca de 6 meses
+                </label>
+                <label>
+                    <input type="radio" name="oneyear" id="oneyear">Cerca de 1 ano
+                </label>
+                <label>
+                    <input type="radio" name="more" id="more">Cerca de:
+                    <textarea rows="1" style="width: 10em" id="periodo" name="periodo"></textarea>
+                </label>
+                </div>
+
+            </div>
+
         </fieldset>
     </form>
 </body>
